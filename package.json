@@ -1,0 +1,22 @@
+{
+  "name": "WebDevTemplateS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --source-map true --output-style compressed src/sass/style.scss dist/style.css",
+    "webpack": "webpack --optimize-minimize",
+    "sass-w": "node-sass -w --source-map true --output-style compressed src/sass/style.scss dist/style.css",
+    "start": "npm run sass-w & webpack-dev-server"
+  },
+  "author": "kataoka@sandalot.com",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.3"
+  }
+}
